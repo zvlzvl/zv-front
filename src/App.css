@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.w-100 {
+    width: 100%;
+}
+.btn {
+    background-color: transparent;
+    color: #00A3FF;
+    border: #00A3FF solid 2px;
+    display: block;
+    max-width: 500px;
+    margin: 0 !important;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color:  	#00A3FF;
+    border: #00A3FF solid 2px;
+    color: black;
+}
+/* Scrollbar width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Scrollbar track */
+::-webkit-scrollbar-track {
+    background: #363b45;
+    border-radius: 10px;
+}
+
+/* Scrollbar thumb */
+::-webkit-scrollbar-thumb {
+    background: #757784;
+    border-radius: 10px;
+}
+
+/* Scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #757784;
+}
+/*Single dungeon component*/
+/*.SingleDungeonCharComp {*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.SingleDungeonCharComp:hover {*/
+/*    background-color: #f5f1e3;*/
+/*}*/
+
+/*Index Page*/
+::selection {
+    background: none;
+}

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="380b57a6-ec73-411a-bf20-5f979d6e22da" name="Changes" comment="init" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;zvlzvl&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/zvlzvl/usersFront.git&quot;,
+    &quot;accountId&quot;: &quot;79864178-19df-4c15-882c-37f7f8253c1d&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2qyDKerEX9Ec3Hd53J087vorjO2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "last_opened_file_path": "/home/z/WebstormProjects/node/zvFinal/zv-front",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/snap/webstorm/451/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets" />
+      <recent name="$PROJECT_DIR$/src/pages" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/src/components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-WS-243.26053.12" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="380b57a6-ec73-411a-bf20-5f979d6e22da" name="Changes" comment="" />
+      <created>1735625859717</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1735625859717</updated>
+      <workItem from="1735625860793" duration="9143000" />
+      <workItem from="1735637042852" duration="2656000" />
+      <workItem from="1735797828613" duration="7255000" />
+      <workItem from="1735806355510" duration="8000" />
+      <workItem from="1735806757006" duration="987000" />
+      <workItem from="1735809330055" duration="661000" />
+      <workItem from="1735885541418" duration="4444000" />
+      <workItem from="1735892480610" duration="5540000" />
+      <workItem from="1736143444647" duration="169000" />
+      <workItem from="1736749130248" duration="13000" />
+      <workItem from="1736749162550" duration="165000" />
+      <workItem from="1736749540121" duration="9317000" />
+      <workItem from="1738308219278" duration="3396000" />
+      <workItem from="1738311894980" duration="11370000" />
+      <workItem from="1738566984865" duration="8216000" />
+      <workItem from="1738826726735" duration="227000" />
+      <workItem from="1738826974053" duration="13000" />
+      <workItem from="1738827010271" duration="18000" />
+      <workItem from="1738827066789" duration="109000" />
+      <workItem from="1738827667160" duration="73000" />
+      <workItem from="1738827872360" duration="13181000" />
+      <workItem from="1739171840729" duration="24647000" />
+      <workItem from="1739340666293" duration="31000" />
+      <workItem from="1739772985190" duration="757000" />
+      <workItem from="1739786013817" duration="30701000" />
+      <workItem from="1739959422334" duration="52000" />
+      <workItem from="1740464035432" duration="23057000" />
+      <workItem from="1740549262302" duration="1676000" />
+      <workItem from="1740559691741" duration="142000" />
+      <workItem from="1740559910884" duration="19320000" />
+      <workItem from="1740640103882" duration="12167000" />
+      <workItem from="1740982208381" duration="1506000" />
+      <workItem from="1742797124651" duration="241000" />
+      <workItem from="1742803507814" duration="19840000" />
+      <workItem from="1742825676019" duration="7177000" />
+      <workItem from="1742885226345" duration="1314000" />
+      <workItem from="1742900083516" duration="18326000" />
+      <workItem from="1742977879240" duration="18000" />
+      <workItem from="1742978653874" duration="17797000" />
+      <workItem from="1743055845463" duration="23033000" />
+      <workItem from="1743081997071" duration="3143000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/App.js</url>
+          <line>29</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/pages/LoginPage.js</url>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/tailwind.config.js</url>
+          <line>21</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/pages/ProfilePage.js</url>
+          <line>143</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/pages/UserPage.js</url>
+          <line>38</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/pages/SinglePostPage.js</url>
+          <line>45</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
