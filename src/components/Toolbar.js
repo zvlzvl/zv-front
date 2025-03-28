@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import {Link, useNavigate} from "react-router-dom";
 import useStore from "../store/main";
 import neon from "../assets/neon.png"; // Import image
@@ -6,7 +6,7 @@ import messageIcon from "../assets/message.png";
 
 const Toolbar = ({socket}) => {
     const navigate = useNavigate();
-    const {loggedUser, loggUser, messages} = useStore((state) => state);
+    const {loggedUser, loggUser} = useStore((state) => state);
     const [open, setOpen] = useState(false);
 
     function logout() {
@@ -65,8 +65,8 @@ const Toolbar = ({socket}) => {
                                           className="relative text-lg font-medium transition-all duration-300 group">
                                         <img className="w-7 h-auto" src={messageIcon} alt=""/>
                                         <div className="relative">
-                                    <span
-                                        className="absolute bottom-4 left-6 text-white text-[15px] p-0 h-[20px] w-[20px] center rounded-full">{messages.length}</span>
+                                    {/*<span*/}
+                                    {/*    className="absolute bottom-4 left-6 text-white text-[15px] p-0 h-[20px] w-[20px] center rounded-full">{messages.length}</span>*/}
                                         </div>
                                     </Link>
                                     <Link to="/profile"

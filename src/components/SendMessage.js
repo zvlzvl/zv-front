@@ -4,20 +4,19 @@ import useStore from "../store/main";
 
 const SendMessage = ({getterId}) => {
 
-    const {loggedUser} = useStore(state => state);
+    const {loggedUser, setChatUsers , setConversation} = useStore((state) => state);
     const messageRef = useRef(null);
     const [error, setError] = useState(null);
-    const [success, setSuccess] = useState(false);
 
     function sendMessage() {
         setError("");
-        setSuccess(false);
         if (messageRef.current.value.trim() === "") setError("Message required");
         const message = {
             message: messageRef.current.value,
             sender: loggedUser._id,
             getter: getterId,
         }
+
         http.postToken(`http://localhost:2008/send-message`, message, loggedUser.token)
             .then((res) => {
                 if (res.error) {
@@ -26,17 +25,17 @@ const SendMessage = ({getterId}) => {
                         setError("");
                     }, 3000);
                 } else {
-                    setSuccess(true);
+                    console.log(res)
+                    setChatUsers(res.chatUsers);
+                    setConversation(res.conversation)
                     setTimeout(() => {
-                        setSuccess(false);
                     }, 3000);
                     messageRef.current.value = "";
                 }
             })
     }
-
     return (
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 ">
             <div className="mt-4 flex flex-col sm:flex-row gap-1">
             <input
                 type="text"
@@ -53,7 +52,6 @@ const SendMessage = ({getterId}) => {
             </div>
             <div className="px-2">
                 {error && <p className="text-red-500 text-sm mt-2">{error}</p>}
-                {success && <p className="text-green-400 text-sm mt-2 ">message send successfully!</p>}
             </div>
         </div>
 

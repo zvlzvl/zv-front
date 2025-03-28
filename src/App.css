@@ -33,13 +33,13 @@
 
 /* Scrollbar thumb */
 ::-webkit-scrollbar-thumb {
-    background: #757784;
+    background: #4a5263;
     border-radius: 10px;
 }
 
 /* Scrollbar thumb on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #757784;
+    background: #4a5263;
 }
 /*Single dungeon component*/
 /*.SingleDungeonCharComp {*/

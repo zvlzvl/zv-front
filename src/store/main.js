@@ -7,9 +7,18 @@ const useStore = create((set) =>
             set((state) => ({
                 loggedUser: user,
             })),
-        messages:[],
-        setMessages:(messages) => set((state) => ({
-            messages: messages,
+
+        chatUsers:[],
+        setChatUsers:(chatUsers) => set((state) => ({
+            chatUsers: chatUsers,
+        })),
+        selectedUser:null,
+        setSelectedUser:(selectedUser) => set((state) => ({
+            selectedUser: selectedUser,
+        })),
+        conversation:[],
+        setConversation: (conversation) => set((state) => ({
+            conversation: conversation,
         })),
         setFavorites: (favorites) => set((state) => ({
             loggedUser: {

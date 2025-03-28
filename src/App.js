@@ -1,5 +1,5 @@
 import './App.css';
-import React, {useEffect} from "react";
+import React from "react";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Toolbar from "./components/Toolbar";
 import IndexPage from "./pages/IndexPage";
@@ -12,20 +12,10 @@ import UserPage from "./pages/UserPage";
 import FavoritesPage from "./pages/FavoritesPage";
 import MessagesPage from "./pages/MessagesPage";
 import {socket} from "./socket"
-import useStore from "./store/main";
 
 
 function App() {
-    const {setMessages} = useStore( state=> state);
-    useEffect(() => {
-        socket.on("message", (data) => {
-            setMessages(data.messages);
-        })
-        return () => {
-            socket.off("message");
-        };
-    }, [socket]);
-        const messages = useStore((state) => state.messages);
+
     return (
         <div className="flex flex-col items-center bg-gray-900">
         <BrowserRouter>
