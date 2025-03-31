@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="380b57a6-ec73-411a-bf20-5f979d6e22da" name="Changes" comment="online chat">
-      <change beforePath="$PROJECT_DIR$/src/components/Toolbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Toolbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/MessagesPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MessagesPage.js" afterDir="false" />
-    </list>
+    <list default="true" id="380b57a6-ec73-411a-bf20-5f979d6e22da" name="Changes" comment="init" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,22 +31,12 @@
     &quot;assignee&quot;: &quot;zvlzvl&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/zvlzvl/zv-front.git",
-    "accountId": "79864178-19df-4c15-882c-37f7f8253c1d"
-  },
-  "recentNewPullRequestHead": {
-    "server": {
-      "useHttp": false,
-      "host": "github.com",
-      "port": null,
-      "suffix": null
-    },
-    "owner": "zvlzvl",
-    "repository": "zv-front"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/zvlzvl/usersFront.git&quot;,
+    &quot;accountId&quot;: &quot;79864178-19df-4c15-882c-37f7f8253c1d&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -63,8 +50,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "#1 on chat",
-    "last_opened_file_path": "/home/z/WebstormProjects/node/zvFinal/zv-front/src/components",
+    "last_opened_file_path": "/home/z/WebstormProjects/node/zvFinal/zv-front",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -76,11 +62,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/assets" />
       <recent name="$PROJECT_DIR$/src/pages" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/src/components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/assets" />
@@ -142,32 +128,18 @@
       <workItem from="1742978653874" duration="17797000" />
       <workItem from="1743055845463" duration="23033000" />
       <workItem from="1743081997071" duration="3143000" />
-      <workItem from="1743141591509" duration="28706000" />
     </task>
-    <task id="LOCAL-00001" summary="online chat">
-      <option name="closed" value="true" />
-      <created>1743190616706</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1743190616706</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="online chat" />
-    <option name="LAST_COMMIT_MESSAGE" value="online chat" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/App.js</url>
-          <line>20</line>
+          <line>29</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -193,18 +165,6 @@
           <url>file://$PROJECT_DIR$/src/pages/SinglePostPage.js</url>
           <line>45</line>
           <option name="timeStamp" value="43" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/pages/MessagesPage.js</url>
-          <line>52</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="51" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/pages/MessagesPage.js</url>
-          <line>83</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="56" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
