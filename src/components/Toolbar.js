@@ -95,31 +95,31 @@ const Toolbar = ({socket}) => {
                             {open && (
                                 <div className="md:hidden rounded-b-2xl p-4 space-y-3">
 
-                                    <Link to="/"
+                                    <Link onClick={() => setOpen(false)}  to="/"
                                           className="relative m-1 font-medium block text-white    rounded-sm pb-2 md:p-0 group">
                                         Home
                                         <span
                                             className="absolute left-0 bottom-0 h-0.5 bg-secondary transition-all group-hover:w-full"></span>
                                     </Link>
-                                    <Link to="/profile"
+                                    <Link onClick={() => setOpen(false)} to="/profile"
                                           className="relative m-1 font-medium block text-white   rounded-sm pb-2 md:p-0 group">
                                         Profile
                                         <span
                                             className="absolute left-0 bottom-0 h-0.5 bg-secondary transition-all group-hover:w-full"></span>
                                     </Link>
-                                    <Link to="/add-post"
+                                    <Link onClick={() => setOpen(false)} to="/add-post"
                                           className="relative m-1 block font-medium text-white  rounded-sm pb-2 md:p-0 group">
                                         Create post
                                         <span
                                             className="absolute left-0 bottom-0 h-0.5 bg-secondary transition-all group-hover:w-full"></span>
                                     </Link>
-                                    <Link to="/messages"
+                                    <Link onClick={() => setOpen(false)} to="/messages"
                                           className="relative m-1 block font-medium text-white  rounded-sm pb-2 md:p-0 group">
                                         Messages
                                         <span
                                             className="absolute left-0 bottom-0 h-0.5 bg-secondary transition-all group-hover:w-full"></span>
                                     </Link>
-                                    <Link to="/favorites"
+                                    <Link onClick={() => setOpen(false)} to="/favorites"
                                           className="relative m-1 block font-medium text-white  rounded-sm pb-2 md:p-0 group">
                                         Favorites
                                         <span

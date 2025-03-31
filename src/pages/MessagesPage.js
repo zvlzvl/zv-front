@@ -99,9 +99,9 @@ const MessagesPage = ({socket}) => {
                 <div className="space-y-4">
                     {chatUsers.length > 0 ? (
                         chatUsers.map((user, index) => (
-                            <>
+                            <div key={index}>
                             <div
-                                key={index}
+
                                 className={`hidden p-3 md:flex items-center gap-3 rounded-lg cursor-pointer transition-transform duration-300  ${yellow.includes(user._id) && " shadow-md shadow-yellow-300/60" } ${
                                     selectedUser?._id === user._id ? "bg-gray-700 scale-105" : "bg-gray-800"
                                 }`}
@@ -110,9 +110,9 @@ const MessagesPage = ({socket}) => {
                                 <img className="w-10 h-10 rounded-full " src={user.image} alt="User"/>
                                 <span className="text-white font-semibold">{user.username}</span>
                             </div>
-                                <img  onClick={() => openChat(user)} className={`w-10 h-10 md:hidden rounded-full ${yellow.includes(user._id) && " shadow-md shadow-yellow-300/60" } ${
+                                <img  onClick={() => openChat(user)} className={`w-10 h-10 md:hidden rounded-full ${yellow.includes(user._id) && "shadow-[0px_0px_6px_2px_rgba(255,255,102)]" } ${
                                     selectedUser?._id === user._id ? "bg-gray-700 scale-105" : "bg-gray-800"}`} src={user.image} alt="User"/>
-                            </>
+                            </div>
                         ))
                     ) : (
                         <p className="text-gray-400">No messages yet.</p>
