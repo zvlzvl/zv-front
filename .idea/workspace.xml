@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="380b57a6-ec73-411a-bf20-5f979d6e22da" name="Changes" comment="init" />
+    <list default="true" id="380b57a6-ec73-411a-bf20-5f979d6e22da" name="Changes" comment="on click close navbar" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,6 +37,9 @@
     &quot;accountId&quot;: &quot;79864178-19df-4c15-882c-37f7f8253c1d&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -50,6 +53,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "/home/z/WebstormProjects/node/zvFinal/zv-front",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -129,17 +133,39 @@
       <workItem from="1743055845463" duration="23033000" />
       <workItem from="1743081997071" duration="3143000" />
     </task>
+    <task id="LOCAL-00001" summary="online chat update">
+      <option name="closed" value="true" />
+      <created>1743404292209</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1743404292209</updated>
+    </task>
+    <task id="LOCAL-00002" summary="on click close navbar">
+      <option name="closed" value="true" />
+      <created>1743408147658</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1743408147658</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="online chat update" />
+    <MESSAGE value="on click close navbar" />
+    <option name="LAST_COMMIT_MESSAGE" value="on click close navbar" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/App.js</url>
-          <line>29</line>
+          <line>19</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -153,7 +179,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/pages/ProfilePage.js</url>
-          <line>143</line>
+          <line>142</line>
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">

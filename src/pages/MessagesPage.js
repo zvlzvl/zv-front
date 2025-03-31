@@ -45,8 +45,10 @@ const MessagesPage = ({socket}) => {
             }
         })
         socket.on("deleteMessage", (data) => {
-
-            setConversation(data.conversation);
+            if (selectedUser?._id === data.sender) {
+                setConversation(data.conversation);
+            } else {
+            }
         })
 
         return () => {

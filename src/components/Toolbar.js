@@ -25,9 +25,14 @@ const Toolbar = ({socket}) => {
                 <>
                     <div className="bg-gray-700 text-center text-white py-1 shadow-lg">
                         <Link to={`/user/${loggedUser._id}`}> {loggedUser?.username} |{" "} </Link>
-                        <Link to={"/logout"} className="text-secondary hover:underline" onClick={logout}>
+                        <a href="/logout"
+                           className="text-secondary hover:underline"
+                           onClick={(e) => {
+                               e.preventDefault();  // Prevent actual navigation
+                               logout();  // Call your logout function
+                           }}>
                             Log out
-                        </Link>
+                        </a>
                     </div>
 
 
