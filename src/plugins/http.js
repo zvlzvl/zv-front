@@ -39,7 +39,6 @@ module.exports = {
     },
     postToken: (url, data, token) => {
         return new Promise((resolve, reject) => {
-            console.log(data);
             const options = {
                 method: "POST",
                 headers: {

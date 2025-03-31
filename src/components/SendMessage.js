@@ -25,7 +25,6 @@ const SendMessage = ({getterId}) => {
                         setError("");
                     }, 3000);
                 } else {
-                    console.log(res)
                     setChatUsers(res.chatUsers);
                     setConversation(res.conversation)
                     setTimeout(() => {

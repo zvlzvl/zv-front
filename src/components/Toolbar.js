@@ -6,12 +6,14 @@ import messageIcon from "../assets/message.png";
 
 const Toolbar = ({socket}) => {
     const navigate = useNavigate();
-    const {loggedUser, loggUser} = useStore((state) => state);
+    const {loggedUser, loggUser, setSelectedUser, setChatUsers} = useStore((state) => state);
     const [open, setOpen] = useState(false);
 
     function logout() {
         setTimeout(() => {
             loggUser(null);
+            setSelectedUser(null);
+            setChatUsers([]);
             socket.emit("restart");
             navigate("/login");
         }, 50);

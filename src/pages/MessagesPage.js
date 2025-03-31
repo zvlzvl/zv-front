@@ -8,15 +8,7 @@ import UserTalk from "../components/UserTalk";
 import AnswerTalk from "../components/AnswerTalk";
 
 const MessagesPage = ({socket}) => {
-    const {
-        loggedUser,
-        chatUsers,
-        setChatUsers,
-        conversation,
-        setConversation,
-        selectedUser,
-        setSelectedUser
-    } = useStore((state) => state);
+    const { loggedUser, chatUsers, setChatUsers, conversation, setConversation, selectedUser, setSelectedUser} = useStore((state) => state);
     const navigate = useNavigate();
     const chatWindowRef = useRef(null)
     const [yellow, setYellow] = useState([]);
@@ -33,9 +25,15 @@ const MessagesPage = ({socket}) => {
     }, [loggedUser, navigate]);
 
     useEffect(() => {
+        socket.on("chatUsers", (data) => {
+            setChatUsers(data.chatUsers);
 
+            if (!data.chatUsers.some(user => user._id === selectedUser?._id)) {
+                setSelectedUser(null);
+            }
+        })
         socket.on("conversation", (data) => {
-            if (selectedUser._id === data.sender) {
+            if (selectedUser?._id === data.sender) {
                 setConversation(data.conversation);
             } else {
                 setYellow((prevYellow) => {
@@ -46,39 +44,39 @@ const MessagesPage = ({socket}) => {
                 });
             }
         })
-        socket.on("chatUsers", (data) => {
-            setChatUsers(data.chatUsers);
+        socket.on("deleteMessage", (data) => {
+
+            setConversation(data.conversation);
         })
+
         return () => {
-            socket.off("conversation");
             socket.off("chatUsers");
+            socket.off("conversation");
+            socket.off("deleteMessage");
+
         };
 
     }, [socket, selectedUser]);
 
-
     function openChat(user) {
-        console.log("Before setting selectedUser:", selectedUser);
         setSelectedUser(user);
-        // Remove user ID from yellow list
+        // Remove user id from yellow list
         setYellow((prevYellow) => prevYellow.filter((id) => id !== user._id));
-        console.log("After setting selectedUser:", user);
         http.getToken(`http://localhost:2008/messages/${user._id}`, loggedUser.token).then((res) => {
             setConversation(res);
         });
     }
 
     function deleteMessage(id) {
-
         http.getToken(`http://localhost:2008/delete-message/${id}`, loggedUser.token)
             .then(res => {
                 if (res.error) {
-                    console.log(res.error);
                 } else {
-                    console.log(res)
                     setChatUsers(res.chatUsers);
+                    if (!res.chatUsers.some(user => user._id === selectedUser?._id)) {
+                        setSelectedUser(null);
+                    }
                     setConversation(res.conversation)
-                    console.log("message deleted successfully");
                 }
             })
     }
@@ -90,27 +88,31 @@ const MessagesPage = ({socket}) => {
     };
 
     useEffect(() => {
-        scrollToBottom(); // Automatically scroll to the bottom when the component mounts or updates
+        scrollToBottom();
     });
 
     return (
         <div className="min-h-screen flex">
             {/* Sidebar - Chat List */}
-            <div className="w-1/3 bg-gray-900 p-6 rounded-r-3xl">
-                <h1 className="text-2xl font-bold text-white mb-4">Friends</h1>
+            <div className="w-1/5  py-6 md:w-1/3 bg-gray-900 sm:p-6 rounded-r-3xl">
+                <h1 className="hidden md:block text-2xl font-bold text-white mb-4">Friends</h1>
                 <div className="space-y-4">
                     {chatUsers.length > 0 ? (
                         chatUsers.map((user, index) => (
+                            <>
                             <div
                                 key={index}
-                                className={`p-3 flex items-center gap-3 rounded-lg cursor-pointer transition-transform duration-300  ${yellow.includes(user._id) && " shadow-md shadow-yellow-300/60" } ${
+                                className={`hidden p-3 md:flex items-center gap-3 rounded-lg cursor-pointer transition-transform duration-300  ${yellow.includes(user._id) && " shadow-md shadow-yellow-300/60" } ${
                                     selectedUser?._id === user._id ? "bg-gray-700 scale-105" : "bg-gray-800"
                                 }`}
                                 onClick={() => openChat(user)}
                             >
-                                <img className="w-10 h-10 rounded-full" src={user.image} alt="User"/>
+                                <img className="w-10 h-10 rounded-full " src={user.image} alt="User"/>
                                 <span className="text-white font-semibold">{user.username}</span>
                             </div>
+                                <img  onClick={() => openChat(user)} className={`w-10 h-10 md:hidden rounded-full ${yellow.includes(user._id) && " shadow-md shadow-yellow-300/60" } ${
+                                    selectedUser?._id === user._id ? "bg-gray-700 scale-105" : "bg-gray-800"}`} src={user.image} alt="User"/>
+                            </>
                         ))
                     ) : (
                         <p className="text-gray-400">No messages yet.</p>
@@ -119,7 +121,7 @@ const MessagesPage = ({socket}) => {
             </div>
 
             {/* Chat Window */}
-            <div className="w-2/3 bg-opacity-40 border border-secondary/30 shadow-lg p-6 rounded-l-3xl flex flex-col h-[500px]">
+            <div className="w-4/5 md:2/3 bg-opacity-40 border border-secondary/30 shadow-lg p-6 rounded-l-3xl flex flex-col h-[500px]">
                 {selectedUser ? (
                     <>
                         <div className="flex items-center gap-4 border-b border-gray-700 pb-4 mb-4">
