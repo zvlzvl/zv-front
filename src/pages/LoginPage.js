@@ -1,10 +1,10 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import useStore from "../store/main";
 import http from "../plugins/http";
 
 const LoginPage = ( {socket }) => {
-    const { loggUser, setMessages } = useStore((state) => state);
+    const { loggUser} = useStore((state) => state);
     const [error, setError] = useState("");
     const navigate = useNavigate();
     const usernameRef = useRef();
@@ -21,7 +21,7 @@ const LoginPage = ( {socket }) => {
             setError(data.error);
         } else {
             loggUser(data.user);
-            setMessages(data.messages);
+            // setMessages(data.messages);
             socket.emit("login", { userId: data.user._id });
             navigate("/");
         }

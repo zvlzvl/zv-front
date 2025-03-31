@@ -29,7 +29,6 @@ const ProfilePage = () => {
         if (!loggedUser) {
             navigate("/login");
         } else {
-            console.log(loggedUser);
             fetch(`http://localhost:2008/profile/${loggedUser.username}`)
                 .then(res => res.json())
                 .then(data => {
