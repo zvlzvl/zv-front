@@ -14,15 +14,13 @@ module.exports = {
     themes: [
       {
         mytheme: {
-          "primary": "#f412a2",
-          "primary-content": "#e2dfda",
-          "neutral": "#e9e2d0",
+          "primary": "#fefaf8",
+          "primary-content": "#333334",
+          "base-content": "#DCDCDC",
+          "secondary": "#d40091",
+          "neutral": "#222324",
           "neutral-content": "#1d2026",
-          "base-100": "#2d3338",
-          "base-200": "#363b45",
-          "base-300": "#62627a",
-          "base-content": "#e2dfda",
-          "secondary": "#00A3FF",
+
         },
       },
     ],
